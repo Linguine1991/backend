@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pizzaria do Gemini</title>
+    <style>
+        img { width: 350px; border-radius: 20px; }
+    </style>
+</head>
+<body>
+        <h1>Sabor do dia: {{ pizza.nome }}</h1>
+        <p><img src="{{ url_for('static', filename=pizza.imagem) }}"></p>
+        
+        <p>Gostou? Peça agora!</p>
+        <hr width="50%">
+        <p>
+            Ver outras: 
+            <a class="btn" href="/pizzaria/calabresa">Calabresa</a>
+            <a class="btn" href="/pizzaria/margherita">Margherita</a>
+            <a class="btn" href="/pizzaria/frango">Frango</a>
+        </p>
+
+</body>
+</html>
